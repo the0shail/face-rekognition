@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="league.common.appaws.views.PutInBucket">
+   <children>
+      <Group layoutX="115.0" layoutY="82.0">
+         <children>
+            <Group>
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="selectImage" layoutX="53.0" layoutY="210.0" mnemonicParsing="false" text="Открыть файл" />
+                  <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Group>
+            <Group layoutX="220.0" layoutY="29.0">
+               <children>
+                  <Group>
+                     <children>
+                        <ChoiceBox fx:id="selectBucket" layoutY="20.0" prefWidth="150.0" />
+                        <Label text="Выберите хранилище" />
+                     </children>
+                  </Group>
+                  <Group layoutY="56.0">
+                     <children>
+                        <Label text="Название фотографии" />
+                        <TextField fx:id="inputImageName" layoutX="1.0" layoutY="20.0" />
+                     </children>
+                  </Group>
+                  <Group layoutY="112.0">
+                     <children>
+                        <Label text="Уникальный тег" />
+                        <TextField fx:id="inputImageTag" layoutX="1.0" layoutY="20.0" />
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Label layoutX="14.0" layoutY="14.0" text="У вас нет хранилища?" />
+      <Hyperlink fx:id="screenCreateBucket" layoutX="11.0" layoutY="31.0" text="Создать тут" />
+      <Button fx:id="buttonNext" layoutX="524.0" layoutY="16.0" mnemonicParsing="false" text="Дальше" />
+   </children>
+</Pane>
